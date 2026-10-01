@@ -1,0 +1,51 @@
+{
+  "model": "qwen2.5:3b-instruct-q4_K_M",
+  "note": "unique prompt per run; prefill is genuine, not cache-served",
+  "runs": {
+    "k4_ctx4096": {
+      "n_passages": 4,
+      "num_ctx": 4096,
+      "prompt_tokens": 1398,
+      "prefill_tok_per_sec_median": 35.7,
+      "decode_tok_per_sec_median": 8.3,
+      "prefill_seconds_median": 39.22,
+      "decode_seconds_median": 8.45,
+      "wall_seconds_median": 48.32,
+      "wall_seconds_all": [
+        45.29,
+        51.35
+      ]
+    },
+    "k3_ctx4096": {
+      "n_passages": 3,
+      "num_ctx": 4096,
+      "prompt_tokens": 1081,
+      "prefill_tok_per_sec_median": 34.0,
+      "decode_tok_per_sec_median": 6.3,
+      "prefill_seconds_median": 31.85,
+      "decode_seconds_median": 11.11,
+      "wall_seconds_median": 43.47,
+      "wall_seconds_all": [
+        48.5,
+        38.43
+      ]
+    },
+    "k2_ctx4096": {
+      "n_passages": 2,
+      "num_ctx": 4096,
+      "prompt_tokens": 762,
+      "prefill_tok_per_sec_median": 37.8,
+      "decode_tok_per_sec_median": 9.1,
+      "prefill_seconds_median": 20.18,
+      "decode_seconds_median": 9.93,
+      "wall_seconds_median": 30.28,
+      "wall_seconds_all": [
+        27.57,
+        32.99
+      ]
+    }
+  },
+  "chosen_k": 3,
+  "headline_seconds_per_question": 43.47,
+  "verdict": "PASS - proceed with the 3B model"
+}

@@ -1,0 +1,24 @@
+# ---- Copyrighted source material: never committed ----
+# data/MANIFEST.csv records provenance so the corpus can be reassembled.
+data/papers/*.pdf
+
+# ---- Regenerable build artifacts ----
+# Rebuilt by scripts/01_build_index.py from the PDFs.
+cache/
+
+# ---- Model weights ----
+checkpoints/
+
+# ---- Python ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---- Office lock files ----
+~$*
+
+# ---- Editor-local settings ----
+.vscode/

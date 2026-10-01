@@ -1,0 +1,45 @@
+# Single source of truth for every experimental parameter.
+# Nothing here is hardcoded elsewhere — changing a value here changes the run.
+
+generator:
+  model: qwen2.5:3b-instruct-q4_K_M
+  fallback_model: qwen2.5:1.5b-instruct-q4_K_M   # only if latency becomes unworkable
+  host: http://127.0.0.1:11434
+  # Set explicitly on every request: Ollama's server default has changed across
+  # versions, and silently getting 2048 would truncate context and present as a
+  # retrieval failure rather than a configuration one.
+  num_ctx: 4096
+  num_predict: 400
+  temperature: 0
+  seed: 0
+  keep_alive: 30m
+
+retrieval:
+  # Chosen from the Gate 0 latency curve (results/smoke_test.json), not guessed:
+  #   k=4 -> 48.3s   k=3 -> 43.5s   k=2 -> 30.3s
+  # Prefill is ~80% of per-question cost and scales with prompt length, so k is
+  # the primary latency lever. Phase 5 re-decides it from recall@k vs latency.
+  k: 3
+  rrf_k: 60          # reciprocal rank fusion constant; literature default, untuned
+  fusion_pool: 20    # top-N taken from each retriever before fusing
+
+chunking:
+  target_tokens: 300   # BGE-small truncates at 512; staying well under keeps the
+  overlap_tokens: 60   # BM25-vs-dense comparison fair, and caps prefill latency
+  max_tokens: 480      # hard ceiling; a chunk above this is a bug
+
+embedding:
+  model: BAAI/bge-small-en-v1.5
+  dim: 384
+  cache_dir: ./cache/fastembed
+  # BGE is trained asymmetrically: queries take an instruction prefix, passages
+  # do not. fastembed applies it in query_embed() but NOT in embed().
+  # Using embed() for both silently destroys retrieval quality.
+  query_prefix: "Represent this sentence for searching relevant passages: "
+
+paths:
+  papers: data/papers
+  manifest: data/MANIFEST.csv
+  glossary: data/glossary.yaml
+  cache: cache
+  results: results

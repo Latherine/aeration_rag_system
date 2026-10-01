@@ -1,0 +1,21 @@
+# Aeration QA — dependencies
+#
+# Every entry here is a deliberate choice; see CLAUDE.md for what was rejected
+# and why. The short version: nothing that drags in torch, and nothing that
+# hides the retrieval mechanics this project exists to measure.
+
+pymupdf==1.26.*        # PDF text extraction with block bboxes + font sizes,
+                       # needed to reconstruct two-column academic papers.
+                       # NOTE: AGPL-3.0 — a deliberate, accepted tradeoff.
+fastembed==0.8.*       # ONNX embeddings (~200 MB resident). Replaces
+                       # sentence-transformers, which would pull ~2.5 GB of torch.
+numpy>=2.1,<3          # Vector store, cosine similarity, bootstrap resampling.
+rank-bm25==0.2.2       # Pure-Python BM25. No compiled extension, no wheel risk.
+requests>=2.32         # Talks to the Ollama HTTP API. Already a fastembed dep.
+pyyaml>=6.0.2          # config.yaml and the evaluation question set.
+
+# Evaluation scripts only — never imported on the interactive path.
+pandas>=2.2
+matplotlib>=3.9
+
+pytest>=8.3
