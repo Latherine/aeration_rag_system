@@ -1,0 +1,165 @@
+# Development question set for comparing retrieval methods.
+#
+# Each question's answer key is a (paper_id, snippets) anchor: a chunk counts as
+# correct if it comes from that paper and contains any of the snippets. Anchors
+# survive re-chunking, unlike chunk ids.
+#
+# Written by the developer before any of these were searched, and validated only
+# for "the snippet exists in some chunk". It is a DEVELOPMENT set: the same person
+# built the system and wrote the questions, so it can guide decisions but is not
+# the Phase 5 evaluation, whose questions must be written independently and fixed
+# before any run.
+#
+# kind:
+#   shared        - the question uses the paper's own wording
+#   abbreviation  - the question spells out a term the paper abbreviates (or the reverse)
+#   paraphrase    - everyday wording that shares few key terms with the paper
+
+questions:
+  # ---- carried over from the Gate 3 smoke test ----
+  - id: q01
+    question: What does the ammonia valley in the pH profile indicate?
+    paper_id: abuhasan2010
+    snippets: ["which indicate the end of nitrification", "especially ammonia valley"]
+    kind: shared
+  - id: q02
+    question: How many hours of aeration were needed before it could be stopped in the low-strength biofilter test?
+    paper_id: abuhasan2010
+    snippets: ["aeration can be stopped at 7 h HRT"]
+    kind: abbreviation
+  - id: q03
+    question: How much money per year did optimizing aeration time save across Duhok's SBR plants?
+    paper_id: hasan2026
+    snippets: ["234,049,308"]
+    kind: shared
+  - id: q04
+    question: What solids retention time is recommended for stable nitrification?
+    paper_id: sakthivel2025
+    snippets: ["Target an SRT of approximately"]
+    kind: abbreviation
+  - id: q05
+    question: Which reactor configuration gave the highest total nitrogen and phosphorus removal?
+    paper_id: sakthivel2025
+    snippets: ["The highest simultaneous TN and TP removal occurred"]
+    kind: shared
+  - id: q06
+    question: Are the plants pumping more air into the tanks than they actually need?
+    paper_id: hasan2026
+    snippets: ["over-aerated"]
+    kind: paraphrase
+
+  # ---- Abu Hasan et al. 2010: bending points in a biological aerated filter ----
+  - id: q07
+    question: Why was no ammonia removed when the filter was run without aeration?
+    paper_id: abuhasan2010
+    snippets: ["DO was not sufficiently supplied to the nitrifiers"]
+    kind: shared
+  - id: q08
+    question: What happens to dissolved oxygen once all the ammonium has been removed?
+    paper_id: abuhasan2010
+    snippets: ["the DO increased after point B"]
+    kind: abbreviation
+  - id: q09
+    question: What hydraulic retention time was used in the biofilter experiments?
+    paper_id: abuhasan2010
+    snippets: ["maintained constantly at pH 6-7 and 24 h HRT"]
+    kind: abbreviation
+  - id: q10
+    question: Why is ammonia in drinking water harmful to people?
+    paper_id: abuhasan2010
+    snippets: ["human nervous system damage"]
+    kind: paraphrase
+
+  # ---- Sakthivel et al. 2025: simulated SBR aeration schedules ----
+  - id: q11
+    question: What internal recirculation ratio is recommended?
+    paper_id: sakthivel2025
+    snippets: ["targeting RR in the"]
+    kind: abbreviation
+  - id: q12
+    question: What share of the react phase should be aerobic to get the most total nitrogen removal?
+    paper_id: sakthivel2025
+    snippets: ["A clear peak in TN removal at 60 % aerobic fraction"]
+    kind: abbreviation
+  - id: q13
+    question: Which simulation software was used to model the sequencing batch reactor?
+    paper_id: sakthivel2025
+    snippets: ["constructed using GPS-X"]
+    kind: shared
+  - id: q14
+    question: What dissolved oxygen level should be held during the aeration pulses?
+    paper_id: sakthivel2025
+    snippets: ["DO Control: Maintain", "aerobic DO target 1.2"]
+    kind: abbreviation
+  - id: q15
+    question: Why does running the blowers nonstop at high oxygen hurt nitrogen removal?
+    paper_id: sakthivel2025
+    snippets: ["Continuous high-DO operation (C4) solved ammonia", "Continuous high aeration (C4) severely undermined"]
+    kind: paraphrase
+  - id: q16
+    question: How well did the model predict the independent Plant B dataset?
+    paper_id: sakthivel2025
+    snippets: ["independent Plant B dataset"]
+    kind: shared
+  - id: q17
+    question: Which configuration removed the most phosphorus?
+    paper_id: sakthivel2025
+    snippets: ["peaking at 88.6", "and TP (88.6 %)"]
+    kind: abbreviation
+  - id: q18
+    question: How much energy did switching the air on and off save compared with normal operation?
+    paper_id: sakthivel2025
+    snippets: ["cut energy by 21"]
+    kind: paraphrase
+  - id: q19
+    question: How does solids retention time affect ammonium left in the effluent?
+    paper_id: sakthivel2025
+    snippets: ["concentration falls steeply with SRT"]
+    kind: abbreviation
+
+  # ---- Hasan & Mizzouri 2026: aeration time in Duhok's decentralized SBRs ----
+  - id: q20
+    question: Is aeration in the equalization basin needed to meet the Iraqi effluent standards?
+    paper_id: hasan2026
+    snippets: ["none of the plants require additional aeration in the EQ basin"]
+    kind: shared
+  - id: q21
+    question: What share of operational expenses goes to electricity in Duhok's treatment plants?
+    paper_id: hasan2026
+    snippets: ["66.86%"]
+    kind: shared
+  - id: q22
+    question: What are the Iraqi effluent limits for chemical oxygen demand and biochemical oxygen demand?
+    paper_id: hasan2026
+    snippets: ["Iraqi effluent limits for COD"]
+    kind: abbreviation
+  - id: q23
+    question: What CO2 emission factor was used for Iraq?
+    paper_id: hasan2026
+    snippets: ["is considered 0.7 kg/kWh"]
+    kind: shared
+  - id: q24
+    question: Why did the treated water come out slightly dirtier after aeration was shortened?
+    paper_id: hasan2026
+    snippets: ["due to the accumulation of biodegradable material"]
+    kind: paraphrase
+  - id: q25
+    question: Did using less air help or hurt nitrogen and phosphorus removal?
+    paper_id: hasan2026
+    snippets: ["positive effect on TP and TN removal"]
+    kind: paraphrase
+  - id: q26
+    question: Which plant had the largest percentage reduction in aeration energy?
+    paper_id: hasan2026
+    snippets: ["69.07% (Sab"]
+    kind: shared
+  - id: q27
+    question: Why were default kinetic parameters used instead of a full calibration?
+    paper_id: hasan2026
+    snippets: ["Full kinetic calibration was not performed"]
+    kind: shared
+  - id: q28
+    question: What could plant staff do with the hours freed up by a shorter cycle?
+    paper_id: hasan2026
+    snippets: ["extra time gained from optimization"]
+    kind: paraphrase
