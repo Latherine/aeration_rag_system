@@ -1,0 +1,465 @@
+{
+  "summary": {
+    "date": "2026-10-27",
+    "model": "qwen2.5:3b-instruct-q4_K_M",
+    "retriever": "dense",
+    "k": 3,
+    "n": 12,
+    "n_timed": 6,
+    "median_seconds": 31.535000000000004,
+    "max_seconds": 40.93,
+    "median_prompt_tokens": 1011.5,
+    "gold_sent": 7,
+    "n_in_corpus": 10,
+    "answered_with_citation": 6,
+    "abstained_in_corpus": 1,
+    "abstained_out_of_corpus": 2,
+    "invalid_citations": 0
+  },
+  "answers": [
+    {
+      "id": "q01",
+      "kind": "shared",
+      "question": "What does the ammonia valley in the pH profile indicate?",
+      "answer": "The ammonia valley in the pH profile indicates the completion of a nitrification process. [1]",
+      "abstained": false,
+      "cited": [
+        1
+      ],
+      "invalid_citations": [],
+      "gold_sent": true,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "abuhasan2010:016",
+          "pages": "pp.5-6",
+          "section": "3. Results and Discussion"
+        },
+        {
+          "number": 2,
+          "chunk_id": "abuhasan2010:017",
+          "pages": "p.6",
+          "section": "3. Results and Discussion"
+        },
+        {
+          "number": 3,
+          "chunk_id": "abuhasan2010:015",
+          "pages": "p.5",
+          "section": "3. Results and Discussion"
+        }
+      ],
+      "prompt_tokens": 1020,
+      "prefill_seconds": 26.62,
+      "output_tokens": 21,
+      "decode_seconds": 3.35,
+      "generation_seconds": 30.76,
+      "prefill_cached": false
+    },
+    {
+      "id": "q04",
+      "kind": "abbreviation",
+      "question": "What solids retention time is recommended for stable nitrification?",
+      "answer": "15\u201320 d",
+      "abstained": false,
+      "cited": [],
+      "invalid_citations": [],
+      "gold_sent": true,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "sakthivel2025:036",
+          "pages": "p.6",
+          "section": "3.2.1. Solids retention time"
+        },
+        {
+          "number": 2,
+          "chunk_id": "sakthivel2025:035",
+          "pages": "p.6",
+          "section": "3.2.1. Solids retention time"
+        },
+        {
+          "number": 3,
+          "chunk_id": "sakthivel2025:037",
+          "pages": "p.6",
+          "section": "3.2.1. Solids retention time"
+        }
+      ],
+      "prompt_tokens": 1003,
+      "prefill_seconds": 23.62,
+      "output_tokens": 7,
+      "decode_seconds": 0.81,
+      "generation_seconds": 25.24,
+      "prefill_cached": false
+    },
+    {
+      "id": "q07",
+      "kind": "shared",
+      "question": "Why was no ammonia removed when the filter was run without aeration?",
+      "answer": "NOT_IN_CORPUS",
+      "abstained": true,
+      "cited": [],
+      "invalid_citations": [],
+      "gold_sent": false,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "abuhasan2010:001",
+          "pages": "p.1",
+          "section": "front matter"
+        },
+        {
+          "number": 2,
+          "chunk_id": "abuhasan2010:003",
+          "pages": "pp.1-2",
+          "section": "1. Introduction"
+        },
+        {
+          "number": 3,
+          "chunk_id": "abuhasan2010:002",
+          "pages": "p.1",
+          "section": "1. Introduction"
+        }
+      ],
+      "prompt_tokens": 984,
+      "prefill_seconds": 15.56,
+      "output_tokens": 6,
+      "decode_seconds": 0.62,
+      "generation_seconds": 16.82,
+      "prefill_cached": true
+    },
+    {
+      "id": "q10",
+      "kind": "paraphrase",
+      "question": "Why is ammonia in drinking water harmful to people?",
+      "answer": "Ammonia in drinking water exceeding the Malaysian regulated limit (<1.5 mg/L) becomes a major problem to drinking water treatment plants (DWTPs). Moreover, high ammonia level in drinking water provided a complication on chlorination process due to the yield of chloramines, human nervous system damage and created a deteriorating taste and odour of water. Therefore, it is necessary to develop an effective additional water treatment system, typically for ammonia removal in order to prevent the plant shutdown due to the high level of ammonia in water. [3]",
+      "abstained": false,
+      "cited": [
+        3
+      ],
+      "invalid_citations": [],
+      "gold_sent": true,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "abuhasan2010:000",
+          "pages": "p.1",
+          "section": "front matter"
+        },
+        {
+          "number": 2,
+          "chunk_id": "abuhasan2010:001",
+          "pages": "p.1",
+          "section": "front matter"
+        },
+        {
+          "number": 3,
+          "chunk_id": "abuhasan2010:002",
+          "pages": "p.1",
+          "section": "1. Introduction"
+        }
+      ],
+      "prompt_tokens": 968,
+      "prefill_seconds": 4.57,
+      "output_tokens": 110,
+      "decode_seconds": 14.83,
+      "generation_seconds": 20.08,
+      "prefill_cached": true
+    },
+    {
+      "id": "q13",
+      "kind": "shared",
+      "question": "Which simulation software was used to model the sequencing batch reactor?",
+      "answer": "GPS-X was used to model the sequencing batch reactor. [2]",
+      "abstained": false,
+      "cited": [
+        2
+      ],
+      "invalid_citations": [],
+      "gold_sent": false,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "sakthivel2025:015",
+          "pages": "p.3",
+          "section": "1. Introduction"
+        },
+        {
+          "number": 2,
+          "chunk_id": "sakthivel2025:011",
+          "pages": "p.2",
+          "section": "1. Introduction"
+        },
+        {
+          "number": 3,
+          "chunk_id": "sakthivel2025:014",
+          "pages": "p.3",
+          "section": "1. Introduction"
+        }
+      ],
+      "prompt_tokens": 833,
+      "prefill_seconds": 13.1,
+      "output_tokens": 15,
+      "decode_seconds": 1.69,
+      "generation_seconds": 15.38,
+      "prefill_cached": true
+    },
+    {
+      "id": "q16",
+      "kind": "shared",
+      "question": "How well did the model predict the independent Plant B dataset?",
+      "answer": "[3] Table 5 compiles validation metrics against an independent Plant B dataset. All R2 \u22650.85 and NSE \u22650.70 confirm robust prediction of NH3\u2013N, TN, TP, and COD under low/high load and elevated temperature.",
+      "abstained": false,
+      "cited": [
+        3
+      ],
+      "invalid_citations": [],
+      "gold_sent": true,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "sakthivel2025:061",
+          "pages": "p.9",
+          "section": "4.4. Model robustness and practical applicability"
+        },
+        {
+          "number": 2,
+          "chunk_id": "sakthivel2025:024",
+          "pages": "p.4",
+          "section": "2.9. Data management and statistical analysis"
+        },
+        {
+          "number": 3,
+          "chunk_id": "sakthivel2025:044",
+          "pages": "p.7",
+          "section": "3.4. Model validation [tables/figures]"
+        }
+      ],
+      "prompt_tokens": 656,
+      "prefill_seconds": 8.72,
+      "output_tokens": 57,
+      "decode_seconds": 5.9,
+      "generation_seconds": 14.92,
+      "prefill_cached": true
+    },
+    {
+      "id": "q19",
+      "kind": "abbreviation",
+      "question": "How does solids retention time affect ammonium left in the effluent?",
+      "answer": "[1] Solids retention time (SRT) affects the amount of ammonium (NH4+-N) left in the effluent by influencing the establishment and stability of nitrifier population. As SRT increases from 5 days to approximately 15 days, the removal of NH4+-N concentration falls steeply, reaching low residual values by the 12-15 days range. This indicates that longer SRT leads to a more stable and established nitrifier population, which helps in reducing NH4+-N in the effluent. Beyond 15 days, the removal of NH4+-N shows diminishing returns.",
+      "abstained": false,
+      "cited": [
+        1
+      ],
+      "invalid_citations": [],
+      "gold_sent": true,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "sakthivel2025:036",
+          "pages": "p.6",
+          "section": "3.2.1. Solids retention time"
+        },
+        {
+          "number": 2,
+          "chunk_id": "abuhasan2010:013",
+          "pages": "pp.4-5",
+          "section": "3. Results and Discussion"
+        },
+        {
+          "number": 3,
+          "chunk_id": "sakthivel2025:035",
+          "pages": "p.6",
+          "section": "3.2.1. Solids retention time"
+        }
+      ],
+      "prompt_tokens": 1029,
+      "prefill_seconds": 21.08,
+      "output_tokens": 131,
+      "decode_seconds": 19.61,
+      "generation_seconds": 40.93,
+      "prefill_cached": false
+    },
+    {
+      "id": "q22",
+      "kind": "abbreviation",
+      "question": "What are the Iraqi effluent limits for chemical oxygen demand and biochemical oxygen demand?",
+      "answer": "[1] Iraqi effluent limits for COD = 100 mg/L, BOD = 40 mg/L, and TSS = 60 mg/L as specified in the Iraqi Environmental Standards, Contract No.: W3QR-50-M074, Rev. No.: 03 Oct 2011 (Ismael and Aziz, 2024).",
+      "abstained": false,
+      "cited": [
+        1
+      ],
+      "invalid_citations": [],
+      "gold_sent": true,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "hasan2026:012",
+          "pages": "p.3",
+          "section": "D. BioWin Modeling"
+        },
+        {
+          "number": 2,
+          "chunk_id": "hasan2026:024",
+          "pages": "pp.6-7",
+          "section": "A. Dynamic Simulation of Duhok SBRs with no EQ Basin Aeration (First Run)"
+        },
+        {
+          "number": 3,
+          "chunk_id": "hasan2026:013",
+          "pages": "pp.3-4",
+          "section": "D. BioWin Modeling"
+        }
+      ],
+      "prompt_tokens": 1061,
+      "prefill_seconds": 0.18,
+      "output_tokens": 85,
+      "decode_seconds": 13.27,
+      "generation_seconds": 14.26,
+      "prefill_cached": true
+    },
+    {
+      "id": "q25",
+      "kind": "paraphrase",
+      "question": "Did using less air help or hurt nitrogen and phosphorus removal?",
+      "answer": "Using less air helped with nitrogen removal, as intermittent aeration (C5) and combined pre + post anoxic (C6) configurations achieved >75 % TN removal with energy savings compared to continuous high-DO operation (C4). Continuous high-DO operation solved ammonia but trapped nitrogen as nitrate, indicating that less air helped in achieving higher TN removal.",
+      "abstained": false,
+      "cited": [],
+      "invalid_citations": [],
+      "gold_sent": false,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "sakthivel2025:031",
+          "pages": "p.5",
+          "section": "3.1.3. Operational implications"
+        },
+        {
+          "number": 2,
+          "chunk_id": "sakthivel2025:028",
+          "pages": "p.5",
+          "section": "3.1.1. Key patterns and contrasts"
+        },
+        {
+          "number": 3,
+          "chunk_id": "sakthivel2025:059",
+          "pages": "p.9",
+          "section": "4.2. Trade-offs between energy use and removal efficiency"
+        }
+      ],
+      "prompt_tokens": 673,
+      "prefill_seconds": 23.42,
+      "output_tokens": 75,
+      "decode_seconds": 8.63,
+      "generation_seconds": 32.31,
+      "prefill_cached": false
+    },
+    {
+      "id": "q28",
+      "kind": "paraphrase",
+      "question": "What could plant staff do with the hours freed up by a shorter cycle?",
+      "answer": "Plant staff could use the hours freed up by a shorter cycle to increase settling time or reduce cycle time, thus treating a greater quantity of wastewater per day, or have more plant shutdowns for applying preventive maintenance.",
+      "abstained": false,
+      "cited": [],
+      "invalid_citations": [],
+      "gold_sent": true,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "hasan2026:010",
+          "pages": "pp.2-3",
+          "section": "D. BioWin Modeling"
+        },
+        {
+          "number": 2,
+          "chunk_id": "hasan2026:005",
+          "pages": "pp.1-2",
+          "section": "I. Introduction"
+        },
+        {
+          "number": 3,
+          "chunk_id": "hasan2026:034",
+          "pages": "p.10",
+          "section": "B. Dynamic Simulation of Duhok SBRs with Optimized Aeration Time (Final Run)"
+        }
+      ],
+      "prompt_tokens": 1024,
+      "prefill_seconds": 0.14,
+      "output_tokens": 43,
+      "decode_seconds": 5.17,
+      "generation_seconds": 6.02,
+      "prefill_cached": true
+    },
+    {
+      "id": "x01",
+      "kind": "out_of_corpus",
+      "question": "How does chlorine dose affect trihalomethane formation in drinking water?",
+      "answer": "NOT_IN_CORPUS",
+      "abstained": true,
+      "cited": [],
+      "invalid_citations": [],
+      "gold_sent": null,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "abuhasan2010:006",
+          "pages": "p.2",
+          "section": "2. Materials and Methods"
+        },
+        {
+          "number": 2,
+          "chunk_id": "abuhasan2010:013",
+          "pages": "pp.4-5",
+          "section": "3. Results and Discussion"
+        },
+        {
+          "number": 3,
+          "chunk_id": "abuhasan2010:010",
+          "pages": "pp.3-4",
+          "section": "2. Materials and Methods"
+        }
+      ],
+      "prompt_tokens": 1088,
+      "prefill_seconds": 24.31,
+      "output_tokens": 6,
+      "decode_seconds": 0.59,
+      "generation_seconds": 25.44,
+      "prefill_cached": false
+    },
+    {
+      "id": "x02",
+      "kind": "out_of_corpus",
+      "question": "What does a UV disinfection system cost to install per cubic metre of capacity?",
+      "answer": "NOT_IN_CORPUS",
+      "abstained": true,
+      "cited": [],
+      "invalid_citations": [],
+      "gold_sent": null,
+      "sources": [
+        {
+          "number": 1,
+          "chunk_id": "abuhasan2010:007",
+          "pages": "pp.2-3",
+          "section": "2. Materials and Methods"
+        },
+        {
+          "number": 2,
+          "chunk_id": "abuhasan2010:009",
+          "pages": "p.3",
+          "section": "2. Materials and Methods"
+        },
+        {
+          "number": 3,
+          "chunk_id": "abuhasan2010:008",
+          "pages": "p.3",
+          "section": "2. Materials and Methods"
+        }
+      ],
+      "prompt_tokens": 1109,
+      "prefill_seconds": 34.46,
+      "output_tokens": 6,
+      "decode_seconds": 1.17,
+      "generation_seconds": 35.92,
+      "prefill_cached": false
+    }
+  ]
+}
