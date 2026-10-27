@@ -1,0 +1,586 @@
+{
+  "date": "2026-10-27",
+  "n_questions": 28,
+  "n_chunks": 125,
+  "k": 3,
+  "n_glossary_terms": 36,
+  "n_questions_expanded": 13,
+  "kind_counts": {
+    "shared": 11,
+    "abbreviation": 10,
+    "paraphrase": 7
+  },
+  "summary": {
+    "plain": {
+      "bm25": {
+        "hit_at_3": 0.42857142857142855,
+        "hit_at_10": 0.6071428571428571,
+        "mrr_at_10": 0.45000000000000007,
+        "by_kind": {
+          "shared": 0.7272727272727273,
+          "abbreviation": 0.3,
+          "paraphrase": 0.14285714285714285
+        }
+      },
+      "dense": {
+        "hit_at_3": 0.6428571428571429,
+        "hit_at_10": 0.8214285714285714,
+        "mrr_at_10": 0.5774801587301587,
+        "by_kind": {
+          "shared": 0.5454545454545454,
+          "abbreviation": 0.6,
+          "paraphrase": 0.8571428571428571
+        }
+      },
+      "hybrid": {
+        "hit_at_3": 0.5357142857142857,
+        "hit_at_10": 0.7857142857142857,
+        "mrr_at_10": 0.4868055555555556,
+        "by_kind": {
+          "shared": 0.7272727272727273,
+          "abbreviation": 0.4,
+          "paraphrase": 0.42857142857142855
+        }
+      }
+    },
+    "glossary": {
+      "bm25": {
+        "hit_at_3": 0.4642857142857143,
+        "hit_at_10": 0.6785714285714286,
+        "mrr_at_10": 0.4440476190476191,
+        "by_kind": {
+          "shared": 0.7272727272727273,
+          "abbreviation": 0.4,
+          "paraphrase": 0.14285714285714285
+        }
+      },
+      "dense": {
+        "hit_at_3": 0.6785714285714286,
+        "hit_at_10": 0.8214285714285714,
+        "mrr_at_10": 0.5804563492063491,
+        "by_kind": {
+          "shared": 0.6363636363636364,
+          "abbreviation": 0.6,
+          "paraphrase": 0.8571428571428571
+        }
+      },
+      "hybrid": {
+        "hit_at_3": 0.5714285714285714,
+        "hit_at_10": 0.8571428571428571,
+        "mrr_at_10": 0.48888888888888893,
+        "by_kind": {
+          "shared": 0.7272727272727273,
+          "abbreviation": 0.5,
+          "paraphrase": 0.42857142857142855
+        }
+      }
+    }
+  },
+  "bootstrap_mrr_glossary_minus_plain": {
+    "bm25": {
+      "diff": -0.005952380952380957,
+      "low": -0.0654761904761905,
+      "high": 0.03452380952380952
+    },
+    "dense": {
+      "diff": 0.0029761904761904756,
+      "low": 0.0,
+      "high": 0.008928571428571426
+    },
+    "hybrid": {
+      "diff": 0.002083333333333333,
+      "low": -0.04523809523809524,
+      "high": 0.038095238095238085
+    }
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "kind": "shared",
+      "question": "What does the ammonia valley in the pH profile indicate?",
+      "expanded": "What does the ammonia valley in the pH profile indicate?",
+      "gold": [
+        "abuhasan2010:005",
+        "abuhasan2010:015",
+        "abuhasan2010:016"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q02",
+      "kind": "abbreviation",
+      "question": "How many hours of aeration were needed before it could be stopped in the low-strength biofilter test?",
+      "expanded": "How many hours of aeration were needed before it could be stopped in the low-strength biofilter test?",
+      "gold": [
+        "abuhasan2010:018"
+      ],
+      "ranks": {
+        "bm25": 4,
+        "dense": null,
+        "hybrid": 8,
+        "bm25+glossary": 4,
+        "dense+glossary": null,
+        "hybrid+glossary": 8
+      }
+    },
+    {
+      "id": "q03",
+      "kind": "shared",
+      "question": "How much money per year did optimizing aeration time save across Duhok's SBR plants?",
+      "expanded": "How much money per year did optimizing aeration time save across Duhok's SBR plants? sequencing batch reactor sequential batch reactor sequencing biological reactor",
+      "gold": [
+        "hasan2026:001",
+        "hasan2026:031",
+        "hasan2026:032"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 2,
+        "hybrid": 1,
+        "bm25+glossary": 3,
+        "dense+glossary": 2,
+        "hybrid+glossary": 2
+      }
+    },
+    {
+      "id": "q04",
+      "kind": "abbreviation",
+      "question": "What solids retention time is recommended for stable nitrification?",
+      "expanded": "What solids retention time is recommended for stable nitrification? SRT",
+      "gold": [
+        "sakthivel2025:037"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 1,
+        "hybrid": 5,
+        "bm25+glossary": 6,
+        "dense+glossary": 1,
+        "hybrid+glossary": 3
+      }
+    },
+    {
+      "id": "q05",
+      "kind": "shared",
+      "question": "Which reactor configuration gave the highest total nitrogen and phosphorus removal?",
+      "expanded": "Which reactor configuration gave the highest total nitrogen and phosphorus removal? TN",
+      "gold": [
+        "sakthivel2025:028"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q06",
+      "kind": "paraphrase",
+      "question": "Are the plants pumping more air into the tanks than they actually need?",
+      "expanded": "Are the plants pumping more air into the tanks than they actually need?",
+      "gold": [
+        "hasan2026:000",
+        "hasan2026:001",
+        "hasan2026:038"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 3,
+        "hybrid": 6,
+        "bm25+glossary": null,
+        "dense+glossary": 3,
+        "hybrid+glossary": 6
+      }
+    },
+    {
+      "id": "q07",
+      "kind": "shared",
+      "question": "Why was no ammonia removed when the filter was run without aeration?",
+      "expanded": "Why was no ammonia removed when the filter was run without aeration?",
+      "gold": [
+        "abuhasan2010:016"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 8,
+        "hybrid": 8,
+        "bm25+glossary": null,
+        "dense+glossary": 8,
+        "hybrid+glossary": 8
+      }
+    },
+    {
+      "id": "q08",
+      "kind": "abbreviation",
+      "question": "What happens to dissolved oxygen once all the ammonium has been removed?",
+      "expanded": "What happens to dissolved oxygen once all the ammonium has been removed? DO",
+      "gold": [
+        "abuhasan2010:013"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 2,
+        "hybrid": 8,
+        "bm25+glossary": null,
+        "dense+glossary": 2,
+        "hybrid+glossary": 5
+      }
+    },
+    {
+      "id": "q09",
+      "kind": "abbreviation",
+      "question": "What hydraulic retention time was used in the biofilter experiments?",
+      "expanded": "What hydraulic retention time was used in the biofilter experiments? HRT",
+      "gold": [
+        "abuhasan2010:009"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": null,
+        "hybrid": null,
+        "bm25+glossary": 5,
+        "dense+glossary": null,
+        "hybrid+glossary": 4
+      }
+    },
+    {
+      "id": "q10",
+      "kind": "paraphrase",
+      "question": "Why is ammonia in drinking water harmful to people?",
+      "expanded": "Why is ammonia in drinking water harmful to people?",
+      "gold": [
+        "abuhasan2010:002"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q11",
+      "kind": "abbreviation",
+      "question": "What internal recirculation ratio is recommended?",
+      "expanded": "What internal recirculation ratio is recommended? RR",
+      "gold": [
+        "sakthivel2025:039"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q12",
+      "kind": "abbreviation",
+      "question": "What share of the react phase should be aerobic to get the most total nitrogen removal?",
+      "expanded": "What share of the react phase should be aerobic to get the most total nitrogen removal? TN",
+      "gold": [
+        "sakthivel2025:040"
+      ],
+      "ranks": {
+        "bm25": 5,
+        "dense": 2,
+        "hybrid": 2,
+        "bm25+glossary": 3,
+        "dense+glossary": 2,
+        "hybrid+glossary": 2
+      }
+    },
+    {
+      "id": "q13",
+      "kind": "shared",
+      "question": "Which simulation software was used to model the sequencing batch reactor?",
+      "expanded": "Which simulation software was used to model the sequencing batch reactor? SBR",
+      "gold": [
+        "sakthivel2025:022"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 10,
+        "hybrid": null,
+        "bm25+glossary": null,
+        "dense+glossary": 10,
+        "hybrid+glossary": null
+      }
+    },
+    {
+      "id": "q14",
+      "kind": "abbreviation",
+      "question": "What dissolved oxygen level should be held during the aeration pulses?",
+      "expanded": "What dissolved oxygen level should be held during the aeration pulses? DO",
+      "gold": [
+        "sakthivel2025:057",
+        "sakthivel2025:060"
+      ],
+      "ranks": {
+        "bm25": 5,
+        "dense": null,
+        "hybrid": null,
+        "bm25+glossary": 5,
+        "dense+glossary": null,
+        "hybrid+glossary": 10
+      }
+    },
+    {
+      "id": "q15",
+      "kind": "paraphrase",
+      "question": "Why does running the blowers nonstop at high oxygen hurt nitrogen removal?",
+      "expanded": "Why does running the blowers nonstop at high oxygen hurt nitrogen removal?",
+      "gold": [
+        "sakthivel2025:028",
+        "sakthivel2025:059"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 1,
+        "hybrid": 9,
+        "bm25+glossary": null,
+        "dense+glossary": 1,
+        "hybrid+glossary": 9
+      }
+    },
+    {
+      "id": "q16",
+      "kind": "shared",
+      "question": "How well did the model predict the independent Plant B dataset?",
+      "expanded": "How well did the model predict the independent Plant B dataset?",
+      "gold": [
+        "sakthivel2025:044"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q17",
+      "kind": "abbreviation",
+      "question": "Which configuration removed the most phosphorus?",
+      "expanded": "Which configuration removed the most phosphorus?",
+      "gold": [
+        "sakthivel2025:026",
+        "sakthivel2025:058"
+      ],
+      "ranks": {
+        "bm25": 5,
+        "dense": null,
+        "hybrid": null,
+        "bm25+glossary": 5,
+        "dense+glossary": null,
+        "hybrid+glossary": null
+      }
+    },
+    {
+      "id": "q18",
+      "kind": "paraphrase",
+      "question": "How much energy did switching the air on and off save compared with normal operation?",
+      "expanded": "How much energy did switching the air on and off save compared with normal operation?",
+      "gold": [
+        "sakthivel2025:042",
+        "sakthivel2025:059"
+      ],
+      "ranks": {
+        "bm25": 4,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 4,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q19",
+      "kind": "abbreviation",
+      "question": "How does solids retention time affect ammonium left in the effluent?",
+      "expanded": "How does solids retention time affect ammonium left in the effluent? SRT",
+      "gold": [
+        "sakthivel2025:035"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q20",
+      "kind": "shared",
+      "question": "Is aeration in the equalization basin needed to meet the Iraqi effluent standards?",
+      "expanded": "Is aeration in the equalization basin needed to meet the Iraqi effluent standards? EQ",
+      "gold": [
+        "hasan2026:023"
+      ],
+      "ranks": {
+        "bm25": 2,
+        "dense": 4,
+        "hybrid": 2,
+        "bm25+glossary": 2,
+        "dense+glossary": 3,
+        "hybrid+glossary": 2
+      }
+    },
+    {
+      "id": "q21",
+      "kind": "shared",
+      "question": "What share of operational expenses goes to electricity in Duhok's treatment plants?",
+      "expanded": "What share of operational expenses goes to electricity in Duhok's treatment plants? OPEX",
+      "gold": [
+        "hasan2026:006"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q22",
+      "kind": "abbreviation",
+      "question": "What are the Iraqi effluent limits for chemical oxygen demand and biochemical oxygen demand?",
+      "expanded": "What are the Iraqi effluent limits for chemical oxygen demand and biochemical oxygen demand? BOD COD",
+      "gold": [
+        "hasan2026:012",
+        "hasan2026:013"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q23",
+      "kind": "shared",
+      "question": "What CO2 emission factor was used for Iraq?",
+      "expanded": "What CO2 emission factor was used for Iraq?",
+      "gold": [
+        "hasan2026:015",
+        "hasan2026:016"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 1,
+        "hybrid": 1,
+        "bm25+glossary": 1,
+        "dense+glossary": 1,
+        "hybrid+glossary": 1
+      }
+    },
+    {
+      "id": "q24",
+      "kind": "paraphrase",
+      "question": "Why did the treated water come out slightly dirtier after aeration was shortened?",
+      "expanded": "Why did the treated water come out slightly dirtier after aeration was shortened?",
+      "gold": [
+        "hasan2026:030"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 2,
+        "hybrid": 9,
+        "bm25+glossary": null,
+        "dense+glossary": 2,
+        "hybrid+glossary": 9
+      }
+    },
+    {
+      "id": "q25",
+      "kind": "paraphrase",
+      "question": "Did using less air help or hurt nitrogen and phosphorus removal?",
+      "expanded": "Did using less air help or hurt nitrogen and phosphorus removal?",
+      "gold": [
+        "hasan2026:028"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": null,
+        "hybrid": null,
+        "bm25+glossary": null,
+        "dense+glossary": null,
+        "hybrid+glossary": null
+      }
+    },
+    {
+      "id": "q26",
+      "kind": "shared",
+      "question": "Which plant had the largest percentage reduction in aeration energy?",
+      "expanded": "Which plant had the largest percentage reduction in aeration energy?",
+      "gold": [
+        "hasan2026:031"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 4,
+        "hybrid": null,
+        "bm25+glossary": null,
+        "dense+glossary": 4,
+        "hybrid+glossary": null
+      }
+    },
+    {
+      "id": "q27",
+      "kind": "shared",
+      "question": "Why were default kinetic parameters used instead of a full calibration?",
+      "expanded": "Why were default kinetic parameters used instead of a full calibration?",
+      "gold": [
+        "hasan2026:010"
+      ],
+      "ranks": {
+        "bm25": 1,
+        "dense": 9,
+        "hybrid": 3,
+        "bm25+glossary": 1,
+        "dense+glossary": 9,
+        "hybrid+glossary": 3
+      }
+    },
+    {
+      "id": "q28",
+      "kind": "paraphrase",
+      "question": "What could plant staff do with the hours freed up by a shorter cycle?",
+      "expanded": "What could plant staff do with the hours freed up by a shorter cycle?",
+      "gold": [
+        "hasan2026:034"
+      ],
+      "ranks": {
+        "bm25": null,
+        "dense": 1,
+        "hybrid": 3,
+        "bm25+glossary": null,
+        "dense+glossary": 1,
+        "hybrid+glossary": 3
+      }
+    }
+  ]
+}

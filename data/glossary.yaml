@@ -1,0 +1,58 @@
+# Abbreviation glossary for query expansion.
+#
+# Written FROM THE PAPERS, not from the questions, by one mechanical rule fixed
+# before the first run of scripts/06_glossary_eval.py:
+#   include  every process or chemistry abbreviation a paper defines in the form
+#            "long form (ABBR)", with each long form spelled as the papers spell it;
+#            plus SRT, which sakthivel2025 defines only by its section heading
+#            "Solids retention time".
+#   exclude  labels that are not domain vocabulary: configuration names (C1-C11,
+#            Normal), test-run names (TS, TS3, TS4), funders and agencies (MOSTI,
+#            NIST, Genex), places (USA), apparatus parts (SPs, PVC), statistics
+#            (RMSE), model state variables (XA, XH) and air pollutants mentioned in
+#            passing (CO2, SO2, NOx, GHG).
+# Chemical symbols (NH4+, NO3-) are not included: the papers never define them in
+# parentheses, so adding them would be a second, hand-picked rule.
+#
+# Matching (src/aeration_qa/glossary.py): the abbreviation is matched
+# case-sensitively as a whole word, optionally plural ("SBRs"), so the verb "do"
+# never expands to dissolved oxygen. Long forms match case-insensitively and also
+# match their plural.
+
+terms:
+  - {abbr: ASM,   long: [activated sludge model]}
+  - {abbr: BAF,   long: [biological aerated filter]}
+  - {abbr: BNR,   long: [biological nutrient removal]}
+  - {abbr: BOD,   long: [biochemical oxygen demand]}
+  - {abbr: BPR,   long: [biological phosphorus removal]}
+  - {abbr: COD,   long: [chemical oxygen demand]}
+  - {abbr: DEWATS, long: [decentralized wastewater treatment system]}
+  - {abbr: DO,    long: [dissolved oxygen]}
+  - {abbr: DOC,   long: [dissolved organic carbon]}
+  - {abbr: DPAO,  long: [denitrifying PAO]}
+  - {abbr: DWTP,  long: [drinking water treatment plant]}
+  - {abbr: EBPR,  long: [enhanced biological phosphorus removal]}
+  - {abbr: EQ,    long: [equalization]}
+  - {abbr: HRT,   long: [hydraulic retention time]}
+  - {abbr: HSPDW, long: [high strength polluted drinking water]}
+  - {abbr: ISE,   long: [ion selective electrode, selective electrode]}
+  - {abbr: LSPDW, long: [low strength polluted drinking water]}
+  - {abbr: MABR,  long: [membrane aerated bioreactor]}
+  - {abbr: MBBR,  long: [movable bed bioreactor]}
+  - {abbr: MBR,   long: [membrane bioreactor]}
+  - {abbr: MLSS,  long: [mixed liquor suspended solids]}
+  - {abbr: OPEX,  long: [operational expenses]}
+  - {abbr: ORP,   long: [oxidation reduction potential]}
+  - {abbr: PAO,   long: [phosphate-accumulating organism, phosphorus-accumulating organism]}
+  - {abbr: PHA,   long: [intracellular carbon]}
+  - {abbr: RR,    long: [internal recirculation]}
+  - {abbr: SAS,   long: [sewage activated sludge]}
+  - {abbr: SBR,   long: [sequencing batch reactor, sequential batch reactor, sequencing biological reactor]}
+  - {abbr: SND,   long: [simultaneous nitrification-denitrification]}
+  - {abbr: SRT,   long: [solids retention time]}
+  - {abbr: TN,    long: [total nitrogen]}
+  - {abbr: TP,    long: [total phosphorus]}
+  - {abbr: TSS,   long: [total suspended solids]}
+  - {abbr: VFA,   long: [volatile fatty acid]}
+  - {abbr: VSS,   long: [volatile suspended solids]}
+  - {abbr: WWTP,  long: [wastewater treatment plant]}
