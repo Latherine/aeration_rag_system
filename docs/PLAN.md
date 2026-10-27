@@ -1,5 +1,9 @@
 # Local RAG QA Assistant for Wastewater Aeration Control
 
+> **Read this first.** This plan was written *before* the Gate 0 benchmark. Where it disagrees with
+> measured reality — prefill speed, the "four chunks" latency estimate, `k=4` — the **Status** section
+> of [`CLAUDE.md`](../CLAUDE.md) wins: Gate 0 measured prefill at ~31–38 tok/s and set `k=3`.
+
 ## Context
 
 An earlier direction (`sbr-transition-transformer/` — a transformer that localizes phase-transition
