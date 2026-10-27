@@ -59,9 +59,13 @@ The PDFs are copyrighted and are not in this repository. [`data/MANIFEST.csv`](d
 each paper's DOI and a sha256 of the file, so the same corpus can be obtained and verified. Place the PDFs
 in `data/papers/` under the filenames given there.
 
-## Licence note: PyMuPDF is AGPL-3.0
+## Licence: AGPL-3.0, because of PyMuPDF
 
-PDF extraction uses [PyMuPDF](https://pymupdf.readthedocs.io), which is licensed under the GNU AGPL-3.0.
-It was chosen deliberately: it is the only extractor tried that gives block bounding boxes and font sizes,
-which are needed to put two-column papers back in reading order. Anyone redistributing or building on this
-code should be aware that the AGPL's obligations apply to software that uses PyMuPDF.
+This code is released under the [GNU AGPL-3.0](LICENSE). PDF extraction uses
+[PyMuPDF](https://pymupdf.readthedocs.io), which is itself AGPL-3.0, and publishing code built on it under
+the same licence is what the AGPL requires. PyMuPDF was chosen deliberately: it is the only extractor tried
+that gives block bounding boxes and font sizes, which are needed to put two-column papers back in reading
+order. Anyone building on this code inherits the AGPL's obligations, including sharing source when the
+software is offered to others over a network.
+
+The licence covers the code only. The papers remain under their publishers' copyright (see above).

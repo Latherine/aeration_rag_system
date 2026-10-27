@@ -54,7 +54,7 @@ afternoon at least once, so do not re-litigate them without new evidence.
   `Embedder.embed_query` prepends it explicitly. Forgetting it raises no error and silently weakens
   dense retrieval. `tests/test_retrieval.py::test_query_and_passage_embeddings_differ` guards this; do
   not delete that test.
-- **PyMuPDF is AGPL-3.0.** This was a conscious, accepted tradeoff (it is the only extractor that gives
+- **PyMuPDF is AGPL-3.0, so the repo is AGPL-3.0** (`LICENSE`, public on GitHub since 2026-10-27). This was a conscious, accepted tradeoff (it is the only extractor that gives
   block bounding boxes and font sizes, which are required to reconstruct two-column academic papers).
   The README must state it. If this repo is ever made public, the licence implication is real.
 - **Never commit the PDFs** in `data/papers/` — they are copyrighted. `data/MANIFEST.csv` records
@@ -150,11 +150,9 @@ pin `onnxruntime==1.22.*` first.
 
 ## Repo and git state
 
-- Local repo on branch `main`. One commit so far (`b90f76e`, Phase 0); the extraction work, manifest,
-  tests and brief are **not yet committed**.
-- **No GitHub remote yet.** `gh` is not installed, so the user creates an empty repo on github.com
-  (private recommended — see the AGPL note above; no README/.gitignore/licence so the first push doesn't
-  conflict) and pastes the URL; then `git remote add origin <url>` and `git push -u origin main`.
+- Branch `main`, pushed to **https://github.com/Latherine/aeration_rag_system** (public, AGPL-3.0;
+  the user chose public + AGPL over private on 2026-10-27). Commits are grouped by phase. `gh` is not
+  installed; plain `git push` works.
 - Commit or push only when the user asks. This repo is the user's own; the separate `onboarding` repo
   next to it is a **shared lab repo where no git operations are allowed at all**.
 
